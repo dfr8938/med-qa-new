@@ -1,0 +1,25 @@
+{
+  "name": "med-qa-portal",
+  "version": "1.0.0",
+  "description": "Medical Q&A Portal with React frontend and Node.js backend",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\"",
+    "dev:client": "cd client && npm run dev",
+    "dev:server": "cd server && npm run dev",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start"
+  },
+  "keywords": [
+    "react",
+    "nodejs",
+    "express",
+    "postgresql",
+    "sequelize"
+  ],
+  "author": "SourceCraft Developer",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}

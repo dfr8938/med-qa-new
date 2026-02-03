@@ -1,0 +1,40 @@
+import React from 'react';
+
+function ConfirmDeleteCategoryModal({ isOpen, onClose, onConfirm, categoryName, questionCount }) {
+  if (!isOpen) return null;
+
+  const handleConfirm = () => {
+    onConfirm();
+    onClose();
+  };
+
+  return (
+    <div className="modal-overlay" onClick={onClose}>
+      <div className="modal-content confirm-modal" onClick={e => e.stopPropagation()}>
+        <div className="modal-header">
+          <h3>Подтверждение удаления</h3>
+          <button className="modal-close" onClick={onClose}>×</button>
+        </div>
+        
+        <div className="modal-body">
+          <p>Вы уверены, что хотите удалить категорию <strong>{categoryName}</strong>?</p>
+          <p className="warning-text">
+            Внимание: Вместе с категорией будут удалены все связанные вопросы ({questionCount} шт.).
+            Это действие невозможно отменить.
+          </p>
+        </div>
+        
+        <div className="form-actions">
+          <button type="button" className="btn btn-danger" onClick={handleConfirm}>
+            Удалить
+          </button>
+          <button type="button" className="btn btn-secondary" onClick={onClose}>
+            Отмена
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default ConfirmDeleteCategoryModal;
