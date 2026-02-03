@@ -19,7 +19,7 @@ IP_ADDRESS=""
 SSL_ENABLED=false
 RESET=false
 INSTALL_DIR="/opt/med-qa-portal"
-REPO_URL="https://github.com/dfr8938/med-qa.git"
+REPO_URL="https://github.com/dfr8938/med-qa-new.git"
 
 # Функция логирования
 log() {
