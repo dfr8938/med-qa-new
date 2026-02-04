@@ -10,7 +10,7 @@ module.exports = {
       env: {
         NODE_ENV: 'production',
         PORT: 5000,
-        HOST: '130.49.149.185',
+        HOST: 'localhost',
         DOMAIN: 'medsester.ru'
       }
     }

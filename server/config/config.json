@@ -1,9 +1,10 @@
 {
   "development": {
-    "username": "postgres",
-    "password": "postgres",
-    "database": "med_qa_dev_db",
-    "host": "127.0.0.1",
+    "username": "med_qa_user",
+    "password": "K3nP5V9mN8xR2dW7qL4pY6tA1sZ3cU8f",
+    "database": "med_qa_db",
+    "host": "localhost",
+    "port": 5432,
     "dialect": "postgres"
   },
   "test": {
